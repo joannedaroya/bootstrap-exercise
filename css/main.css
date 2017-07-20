@@ -1,0 +1,69 @@
+.hash {
+  font-size: 1430%;
+  text-align: center;
+  font-weight: bolder; }
+  @media (max-width: 768px) {
+    .hash {
+      font-size: 1350%; } }
+  @media (max-width: 576px) {
+    .hash {
+      font-size: 1200%; } }
+  @media (max-width: 480px) {
+    .hash {
+      font-size: 1000%; } }
+  @media (max-width: 320px) {
+    .hash {
+      font-size: 900%; } }
+
+.main {
+  background-color: Gainsboro;
+  padding: 30px;
+  padding-top: 20px;
+  margin: 20px 0; }
+
+.form-group input {
+  font-size: 130%;
+  border-radius: 0;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: 0.3s; }
+  .form-group input:hover {
+    background-color: #f0f0f0;
+    transition: 0.3s; }
+  .form-group input:focus {
+    background-color: #fff;
+    transition: 0.3s; }
+  @media (max-width: 992px) {
+    .form-group input {
+      font-size: 105%;
+      padding: 15px 10px; } }
+  @media (max-width: 576px) {
+    .form-group input {
+      font-size: 85%; } }
+  @media (max-width: 480px) {
+    .form-group input {
+      font-size: 112%; } }
+  @media (max-width: 320px) {
+    .form-group input {
+      font-size: 73%;
+      padding: 20px 7px; } }
+
+.output {
+  border: 2px solid darkgray;
+  background-color: #f2f2f2; }
+
+fieldset:first-child {
+  margin-bottom: 2%; }
+
+legend {
+  font-weight: bolder;
+  font-size: 130%; }
+
+label {
+  cursor: pointer; }
+
+.version {
+  color: #909090;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

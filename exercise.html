@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    </style>
+
+    <!-- scripts -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    let removePunctuations = function(input) {
+      return input.replace(/[&\/\\#,+()$~%.'":;*?<>{}\^\@\-\=\`\!]/g, '');
+    }
+    let generateHashtag = function(message) {
+      let input = document.getElementById("message").value.trim();
+      let cleanString = removePunctuations(input);
+
+      let words = cleanString.split(" ");
+      let results = words.map( word => ` #${word}` )
+        .filter(word => word.length > 2)
+        .join(" ")
+        .toLowerCase();
+
+      // display results
+      document.getElementById("results").innerHTML = results;
+    };
+    let handleClick = function() {
+      document.getElementById("message").placeholder = "";
+    }
+    function handleKeyPress(e){
+        if(e.keyCode === 13){
+            e.preventDefault(); // Ensure it is only this code that rusn
+            generateHashtag();
+        }
+    }
+    function handleBlur(e){
+        e.preventDefault(); // Ensure it is only this code that rusn
+        document.getElementById("message").placeholder =
+          "Enter your message or paste some text here.";
+    }
+    </script>
+  </head>
+  <body>
+    <div class="row">
+      &nbsp;
+    </div>
+    <div class="row">
+      <div class="col-xs-1 col-md-1" style="background-color:white;">
+      </div>
+      <div class="container col-xs-8 col-md-3"
+        style="background-color:white;auto;">
+
+          <span style="font-size: 200px" aria-hidden="true">#</span>
+      </div>
+      <div class="col-xs-2 col-md-7"
+        style="background-color:Gainsboro;">
+        <!-- Input section -->
+        <fieldset>
+        <legend>My Awesome Hashtag Generator:</legend>
+        <div class="input-group">
+          <div class="col-xs-12">
+            <div class="field">
+              <input id="message" type="text" class="form-control input-lg"
+                onClick="handleClick()"
+                onKeypress="handleKeyPress(event)"
+                onBlur="handleBlur(event)"
+                placeholder="Enter your message or paste some text here.">
+
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <button class="btn btn-default"
+              onclick="generateHashtag()">Generate my hashtags!</button>
+          </div>
+        </div>
+        </fieldset>
+        <!-- Output section -->
+        </br>
+
+          <legend>Your Hashtags</legend>
+          <div class="col-xs-12">
+          <p id="results" class="well well-lg">
+            It's lonely here. Generate some hashtags!
+          </p>
+          </div>
+      </div>
+      <div class="col-xs-1 col-md-1" style="background-color:white;"></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-1 col-md-1" style="background-color:white;">
+      </div>
+      <div class="container col-xs-10 col-md-10"
+        style="background-color:white;color:#DCDCDC;">
+        </br>version 0.0.2
+      </div>
+      <div class="col-xs-1 col-md-1" style="background-color:white;">
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,80 @@
+.hash {
+	font-size: 1430%;
+	text-align: center;
+	font-weight: bolder;
+
+	@media (max-width: 768px) {
+		font-size: 1350%;
+	}
+	@media (max-width: 576px) {
+		font-size: 1200%;
+	}
+	@media (max-width: 480px) {
+		font-size: 1000%;
+	}
+	@media (max-width: 320px) {
+		font-size: 900%;
+	}
+}
+
+.main {
+	background-color: Gainsboro;
+	padding: 30px;
+	padding-top: 20px;
+	margin: 20px 0;
+}
+
+.form-group {
+	input {
+		font-size: 130%;
+		border-radius: 0;
+		background-color: #fff;
+		margin-bottom: 5px;
+		transition: 0.3s;
+		&:hover {
+			background-color: lighten(Gainsboro, 8%);
+			transition: 0.3s;
+		}
+		&:focus {
+			background-color: #fff;
+			transition: 0.3s;
+		}
+		@media (max-width: 992px) {
+			font-size: 105%;
+			padding: 15px 10px;
+		}
+		@media (max-width: 576px) {
+			font-size: 85%;
+		}
+		@media (max-width: 480px) {
+			font-size: 112%;
+		}
+		@media (max-width: 320px) {
+			font-size: 73%;
+			padding: 20px 7px;
+		}
+	}
+}
+
+.output {
+	border: 2px solid darken(Gainsboro, 20%);
+	background-color: darken(#fff, 5%);
+}
+
+fieldset:first-child {
+	margin-bottom: 2%;
+}
+
+legend {
+	font-weight: bolder;
+	font-size: 130%;
+}
+
+label {
+	cursor: pointer;
+}
+
+.version {
+	color: darken(Gainsboro, 30%);
+	text-align: center;
+}
