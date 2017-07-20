@@ -8,13 +8,13 @@
 		font-size: 1300%;
 	}
 	@media (max-width: 576px) {
-		font-size: 1200%;
+		font-size: 1100%;
 	}
 	@media (max-width: 480px) {
-		font-size: 1000%;
+		font-size: 800%;
 	}
 	@media (max-width: 320px) {
-		font-size: 900%;
+		font-size: 600%;
 	}
 }
 
@@ -53,6 +53,13 @@ fieldset:first-child {
 legend {
 	font-weight: bolder;
 	font-size: 130%;
+	
+	@media (max-width: 480px) {
+		font-size: 115%;
+	}
+	@media (max-width: 320px) {
+		font-size: 100%;
+	}
 }
 
 label {
@@ -103,7 +110,7 @@ label {
 	background-color: darken(#fff, 5%);
 }
 
-.version {
+p {
 	color: darken(Gainsboro, 30%);
 	text-align: center;
 }
