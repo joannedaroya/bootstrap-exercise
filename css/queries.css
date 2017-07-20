@@ -1,0 +1,46 @@
+@media (max-width: 992px) {
+  .form-group input {
+    font-size: 115%;
+    padding: 15px 10px; } }
+@media (max-width: 768px) {
+  .hash {
+    font-size: 1300%; }
+
+  #main {
+    padding: 20px; }
+
+  .form-group input {
+    font-size: 105%; } }
+@media (max-width: 576px) {
+  .hash {
+    font-size: 1100%; }
+
+  #main {
+    padding: 15px; }
+
+  .form-group input {
+    font-size: 95%; } }
+@media (max-width: 480px) {
+  .hash {
+    font-size: 800%; }
+
+  #main {
+    margin-top: 0; }
+
+  legend {
+    font-size: 115%; }
+
+  .form-group input {
+    font-size: 100%;
+    padding: 15px 7px; } }
+@media (max-width: 320px) {
+  .hash {
+    font-size: 600%; }
+
+  legend {
+    font-size: 100%; }
+
+  .form-group input {
+    font-size: 85%; } }
+
+/*# sourceMappingURL=queries.css.map */

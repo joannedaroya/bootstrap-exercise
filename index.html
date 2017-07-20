@@ -1,52 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!--BOOTSTRAP 4-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!--BOOTSTRAP 4-->
-
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-	<title>Hashtag Generator</title>
-</head>
-
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm hash scale">
-				<span aria-hidden="true"><label for="message">#</label></span>
-			</div>
-			<div class="col-sm-8 main">
-				<fieldset>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    <link rel="stylesheet" type="text/css" href="css/queries.css">
+		<title>Hashtag Generator</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm hash" id="scale">
+					<label for="message">#</label>
+				</div>
+				<div class="col-sm-8" id="main">
 					<legend>My Awesome Hashtag Generator:</legend>
 					<div class="form-group">
-						<input id="message" type="text" class="form-control"
-		                onClick="handleClick()"
-		                onKeypress="handleKeyPress(event)"
-		                onBlur="handleBlur(event)"
-		                placeholder="Enter your message or paste some text here.">
+						<input id="message" type="text" class="form-control" onClick="handleClick()" onKeypress="handleKeyPress(event)" onBlur="handleBlur(event)" placeholder="Enter your message or paste some text here.">
 		                <button class="btn btn-secondary" onclick="generateHashtag()">Generate my hashtags!</button>
 					</div>
-				</fieldset>
-
-				<fieldset>
 					<legend>Your Hashtags</legend>
-					<div class="output card">
-						<div class="card-block">
-							<div id="results">It's lonely here. Generate some hashtags!</div>
-				        </div>
-					</div>
-				</fieldset>
+					<div id="results" class="card-block output">It's lonely here. Generate some hashtags!</div>
+				</div>
 			</div>
+			<p>version 0.0.2</p>
 		</div>
-		<p>version 0.0.2</p>
-	</div>
-
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/mainjs.js"></script>
-</body>
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/mainjs.js"></script>
+	</body>
 </html>

@@ -1,114 +1,32 @@
+$main-color: Gainsboro;
+
 /*-----------LOGO------------*/
 .hash {
 	font-size: 1430%;
 	text-align: center;
-	font-weight: bolder;
-
-	@media (max-width: 768px) {
-		font-size: 1300%;
-	}
-	@media (max-width: 576px) {
-		font-size: 1100%;
-	}
-	@media (max-width: 480px) {
-		font-size: 800%;
-	}
-	@media (max-width: 320px) {
-		font-size: 600%;
-	}
-}
-
-//----------logo animation----------
-@keyframes scale {
-	0% { transform: scale(1); }
-	50% { transform: scale(1.1); }
-	100% { transform: scale(1); }
-}
-
-.scale {
-	animation: scale 0.5s ease-in 0.3s both;
+	font-weight: bold;
 }
 
 /*-----------MAIN CONTENT------------*/
-.main {
-	background-color: Gainsboro;
-	padding: 30px;
+#main {
+	background-color: $main-color;
+	padding: 25px;
 	margin: 20px 0;
-	
-	@media (max-width: 768px) {
-		padding: 20px;
-	}
-	@media (max-width: 576px) {
-		padding: 15px;
-	}
-	@media (max-width: 480px) {
-		margin-top: 0;
-	}
 }
 
-fieldset:first-child {
-	margin-bottom: 5px;
-}
+legend { font-weight: bold; }
 
-legend {
-	font-weight: bolder;
-	font-size: 130%;
-	
-	@media (max-width: 480px) {
-		font-size: 115%;
-	}
-	@media (max-width: 320px) {
-		font-size: 100%;
-	}
-}
+.output { background-color: darken(#fff, 5%); }
 
-label {
-	cursor: pointer;
+p {
+	color: $main-color;
+	text-align: center;
+	font-weight: bold;
 }
 
 /*-----------field------------*/
-.form-group {
-	input {
-		font-size: 130%;
-		border-radius: 0;
-		background-color: #fff;
-		margin-bottom: 5px;
-		padding: 15px;
-		transition: 0.3s;
-		&:hover {
-			background-color: lighten(Gainsboro, 8%);
-			transition: 0.3s;
-		}
-		&:focus {
-			background-color: #fff;
-			transition: 0.3s;
-		}
-		@media (max-width: 992px) {
-			font-size: 115%;
-			padding: 15px 10px;
-		}
-		@media (max-width: 768px) {
-			font-size: 105%;
-		}
-		@media (max-width: 576px) {
-			font-size: 95%;
-		}
-		@media (max-width: 480px) {
-			font-size: 100%;
-			padding: 15px 7px;
-		}
-		@media (max-width: 320px) {
-			font-size: 85%;
-		}
-	}
-}
-
-.output {
-	border: 2px solid darken(Gainsboro, 20%);
-	background-color: darken(#fff, 5%);
-}
-
-p {
-	color: darken(Gainsboro, 30%);
-	text-align: center;
+.form-group input {
+	font-size: 120%;
+	border-radius: 0;
+	padding: 15px;
 }
