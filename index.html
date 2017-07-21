@@ -9,18 +9,20 @@
 		<title>Hashtag Generator</title>
 	</head>
 	<body>
-		<div class="container">
-			<div class="row">
+		<div class="container" id="main">
+			<h1>My <span>Awesome</span> Hashtag Generator</h1>
+			<div class="row content">
 				<div class="col-sm hash" id="scale">
 					<label for="message">#</label>
 				</div>
-				<div class="col-sm-8" id="main">
-					<legend>My Awesome Hashtag Generator:</legend>
-					<div class="form-group">
-						<input id="message" type="text" class="form-control" onClick="handleClick()" onKeypress="handleKeyPress(event)" onBlur="handleBlur(event)" placeholder="Enter your message or paste some text here.">
-		                <button class="btn btn-secondary" onclick="generateHashtag()">Generate my hashtags!</button>
-					</div>
-					<legend>Your Hashtags</legend>
+				<div class="col-sm-10 field">
+					<input id="message" type="text" class="form-control form-control-lg" onClick="handleClick()" onKeypress="handleKeyPress(event)" onBlur="handleBlur(event)" placeholder="Enter your message or paste some text here.">
+					<button class="btn btn-outline-success" onclick="generateHashtag()">Generate</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm card">
+					<div class="card-header">Your Hashtags</div>
 					<div id="results" class="card-block output">It's lonely here. Generate some hashtags!</div>
 				</div>
 			</div>

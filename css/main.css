@@ -1,30 +1,65 @@
-/*-----------LOGO------------*/
-.hash {
-  font-size: 1430%;
-  text-align: center;
-  font-weight: bold; }
+@import url(https://font.googleapis.com/css?family=Roboto);
+html, body {
+  font-family: "Roboto", sans-serif; }
 
-/*-----------MAIN CONTENT------------*/
 #main {
-  background-color: Gainsboro;
-  padding: 25px;
-  margin: 20px 0; }
+  margin: 50px auto 15px auto;
+  padding: 0; }
+
+.content {
+  margin: 0; }
+
+.field {
+  padding: 30px; }
+  .field input {
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    margin: 30px 0 10px 0;
+    padding-left: 0;
+    transition: 0.3s; }
+    .field input:hover {
+      background-color: #f2f2f2;
+      transition: 0.3s; }
+
+.hash {
+  margin-right: 20px;
+  padding: 0;
+  text-align: right; }
+  .hash label {
+    font-size: 900%;
+    font-weight: bold;
+    color: #4c934c;
+    transition: 0.5s; }
+    .hash label:hover {
+      color: #3b713b; }
+
+h1 {
+  text-align: center; }
+
+span {
+  color: #4c934c;
+  font-weight: bold; }
 
 legend {
   font-weight: bold; }
 
-.output {
-  background-color: #f2f2f2; }
-
 p {
-  color: Gainsboro;
+  color: #4c934c;
   text-align: center;
   font-weight: bold; }
 
-/*-----------field------------*/
-.form-group input {
-  font-size: 120%;
-  border-radius: 0;
-  padding: 15px; }
+.card {
+  margin: 0 10% 5% 10%;
+  border: 0;
+  padding: 0; }
+
+.card-header {
+  background-color: #4c934c;
+  color: #fff;
+  font-weight: bold; }
+
+.card-block {
+  background-color: #d9d9d9; }
 
 /*# sourceMappingURL=main.css.map */

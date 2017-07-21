@@ -1,22 +1,62 @@
-$main-color: Gainsboro;
+$main-color: #4c934c;
+$light-color: lighten($main-color, 10%);
+$dark-color: darken($main-color, 10%);
 
-/*-----------LOGO------------*/
+@mixin google-font($font) {
+	$font: unquote($font);
+	@import url(https://font.googleapis.com/css?family=#{$font});
+}
+@include google-font("Roboto");
+
+html, body { font-family: "Roboto", sans-serif; }
+
+//---------CONTAINERS--------
+#main {
+	margin: 50px auto 15px auto;
+	padding: 0;
+}
+
+.content { margin: 0; }
+
+.field {
+	padding: 30px;
+	input {
+		border: 0;
+		border-bottom: 1px solid;
+		border-radius: 0;
+		margin: 30px 0 10px 0;
+		padding-left: 0;
+		transition: 0.3s;
+		&:hover {
+			background-color: darken(#fff, 5%);
+			transition: 0.3s
+		}
+	}
+}
+
+//-----------LOGO------------
 .hash {
-	font-size: 1430%;
-	text-align: center;
+	margin-right: 20px;
+	padding: 0;
+	text-align: right;
+	label {
+		font-size: 900%;
+		font-weight: bold;
+		color: $main-color;
+		transition: 0.5s;
+		&:hover { color: $dark-color; }
+	}
+}
+
+//----------CONTENTS-------------
+h1 { text-align: center; }
+
+span {
+	color: $main-color;
 	font-weight: bold;
 }
 
-/*-----------MAIN CONTENT------------*/
-#main {
-	background-color: $main-color;
-	padding: 25px;
-	margin: 20px 0;
-}
-
 legend { font-weight: bold; }
-
-.output { background-color: darken(#fff, 5%); }
 
 p {
 	color: $main-color;
@@ -24,9 +64,16 @@ p {
 	font-weight: bold;
 }
 
-/*-----------field------------*/
-.form-group input {
-	font-size: 120%;
-	border-radius: 0;
-	padding: 15px;
+.card {
+	margin: 0 10% 5% 10%;
+	border: 0;
+	padding: 0;
 }
+
+.card-header {
+	background-color: $main-color;
+	color: #fff;
+	font-weight: bold;
+}
+
+.card-block { background-color: darken(#fff, 15%); }

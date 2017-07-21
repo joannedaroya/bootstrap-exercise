@@ -1,46 +1,20 @@
 @media (max-width: 992px) {
-  .form-group input {
-    font-size: 115%;
-    padding: 15px 10px; } }
-@media (max-width: 768px) {
+  html, body {
+    font-size: 14px; } }
+@media (max-width: 575px) {
   .hash {
-    font-size: 1300%; }
-
-  #main {
-    padding: 20px; }
-
-  .form-group input {
-    font-size: 105%; } }
-@media (max-width: 576px) {
-  .hash {
-    font-size: 1100%; }
-
-  #main {
-    padding: 15px; }
-
-  .form-group input {
-    font-size: 95%; } }
+    text-align: center; } }
 @media (max-width: 480px) {
   .hash {
-    font-size: 800%; }
+    text-align: center; }
 
-  #main {
-    margin-top: 0; }
+  .field {
+    padding: 0 10px; }
 
-  legend {
-    font-size: 115%; }
-
-  .form-group input {
-    font-size: 100%;
-    padding: 15px 7px; } }
+  .card {
+    margin: 10px 25px; } }
 @media (max-width: 320px) {
-  .hash {
-    font-size: 600%; }
-
-  legend {
-    font-size: 100%; }
-
-  .form-group input {
-    font-size: 85%; } }
+  html, body {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=queries.css.map */
